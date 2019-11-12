@@ -312,8 +312,10 @@
             <h1 id="DBLP知识图谱构建"><a href="#DBLP知识图谱构建" class="headerlink" title="DBLP知识图谱构建"></a>DBLP知识图谱构建</h1><hr>
 <h2 id="博客概要"><a href="#博客概要" class="headerlink" title="博客概要"></a>博客概要</h2><p>最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧<br><img src="" alt="思维导图"></p>
 <hr>
-<h2 id="工作需求"><a href="#工作需求" class="headerlink" title="工作需求"></a>工作需求</h2><p>首先说明一下我们的工作是在<strong>做什么</strong><br>我们希望用DBLP网站上，获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作</p>
-<h3 id="以paper为核心的dblp知识图谱"><a href="#以paper为核心的dblp知识图谱" class="headerlink" title="以paper为核心的dblp知识图谱"></a>以paper为核心的dblp知识图谱</h3><p>我们提取出来的所有数据都是以paper为核心的</p>
+<h2 id="工作需求"><a href="#工作需求" class="headerlink" title="工作需求"></a>工作需求</h2><p>首先说明一下我们的工作是在<strong>做什么</strong><br>我们希望从DBLP网站上获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作</p>
+<h3 id="以paper为核心的dblp知识图谱"><a href="#以paper为核心的dblp知识图谱" class="headerlink" title="以paper为核心的dblp知识图谱"></a>以paper为核心的dblp知识图谱</h3><p>我们提取出来的所有数据都是以paper为核心的，在接下来要描述的三个数据集中我们可以看到，我们所定义的rdf都是以paper的key为头实体，然后连接各种各样的其他实体或属性</p>
+<h3 id="Author数据集"><a href="#Author数据集" class="headerlink" title="Author数据集"></a>Author数据集</h3><p>第一个数据集记录所有paper的Author信息，三元组形式为:<br><strong>(paperKey, paperAuthorBy, authorName)</strong></p>
+<h3 id="Paper数据集"><a href="#Paper数据集" class="headerlink" title="Paper数据集"></a>Paper数据集</h3><p>第二个数据集记录了所有paper的一些具体信息，分别为modefydate，发表时间year，论文标题title这三个属性，每个paper实体都记录3条rdf数据，三元组形式分别为:<br><strong>(Paperkey, paperTitile, title)</strong><br><strong>(Paperkey, paperMDate, mdate)</strong><br><strong>(PaperKey, paperYears, year)</strong></p>
 
           
         

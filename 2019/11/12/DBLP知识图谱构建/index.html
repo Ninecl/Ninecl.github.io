@@ -86,14 +86,14 @@
 
 
 
-<meta name="description" content="DBLP知识图谱构建 博客概要最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧  工作需求首先说明一下我们的工作是在做什么我们希望用DBLP网站上，获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作 以paper为核心的dblp知识图谱我们提取出来的所有数据都是以paper为核心的">
+<meta name="description" content="DBLP知识图谱构建 博客概要最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧  工作需求首先说明一下我们的工作是在做什么我们希望从DBLP网站上获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作 以paper为核心的dblp知识图谱我们提取出来的所有数据都是以paper为核心的，在接下来要描述的三个数据集中我们可以看到，我们所定">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DBLP知识图谱构建">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;12&#x2F;DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA&#x2F;index.html">
 <meta property="og:site_name" content="Ninecl">
-<meta property="og:description" content="DBLP知识图谱构建 博客概要最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧  工作需求首先说明一下我们的工作是在做什么我们希望用DBLP网站上，获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作 以paper为核心的dblp知识图谱我们提取出来的所有数据都是以paper为核心的">
+<meta property="og:description" content="DBLP知识图谱构建 博客概要最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧  工作需求首先说明一下我们的工作是在做什么我们希望从DBLP网站上获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作 以paper为核心的dblp知识图谱我们提取出来的所有数据都是以paper为核心的，在接下来要描述的三个数据集中我们可以看到，我们所定">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-12T13:18:05.602Z">
+<meta property="og:updated_time" content="2019-11-12T13:29:25.260Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -308,8 +308,10 @@
         <h1 id="DBLP知识图谱构建"><a href="#DBLP知识图谱构建" class="headerlink" title="DBLP知识图谱构建"></a>DBLP知识图谱构建</h1><hr>
 <h2 id="博客概要"><a href="#博客概要" class="headerlink" title="博客概要"></a>博客概要</h2><p>最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧<br><img src="" alt="思维导图"></p>
 <hr>
-<h2 id="工作需求"><a href="#工作需求" class="headerlink" title="工作需求"></a>工作需求</h2><p>首先说明一下我们的工作是在<strong>做什么</strong><br>我们希望用DBLP网站上，获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作</p>
-<h3 id="以paper为核心的dblp知识图谱"><a href="#以paper为核心的dblp知识图谱" class="headerlink" title="以paper为核心的dblp知识图谱"></a>以paper为核心的dblp知识图谱</h3><p>我们提取出来的所有数据都是以paper为核心的</p>
+<h2 id="工作需求"><a href="#工作需求" class="headerlink" title="工作需求"></a>工作需求</h2><p>首先说明一下我们的工作是在<strong>做什么</strong><br>我们希望从DBLP网站上获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作</p>
+<h3 id="以paper为核心的dblp知识图谱"><a href="#以paper为核心的dblp知识图谱" class="headerlink" title="以paper为核心的dblp知识图谱"></a>以paper为核心的dblp知识图谱</h3><p>我们提取出来的所有数据都是以paper为核心的，在接下来要描述的三个数据集中我们可以看到，我们所定义的rdf都是以paper的key为头实体，然后连接各种各样的其他实体或属性</p>
+<h3 id="Author数据集"><a href="#Author数据集" class="headerlink" title="Author数据集"></a>Author数据集</h3><p>第一个数据集记录所有paper的Author信息，三元组形式为:<br><strong>(paperKey, paperAuthorBy, authorName)</strong></p>
+<h3 id="Paper数据集"><a href="#Paper数据集" class="headerlink" title="Paper数据集"></a>Paper数据集</h3><p>第二个数据集记录了所有paper的一些具体信息，分别为modefydate，发表时间year，论文标题title这三个属性，每个paper实体都记录3条rdf数据，三元组形式分别为:<br><strong>(Paperkey, paperTitile, title)</strong><br><strong>(Paperkey, paperMDate, mdate)</strong><br><strong>(PaperKey, paperYears, year)</strong></p>
 
       
     </div>
@@ -456,7 +458,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#DBLP知识图谱构建"><span class="nav-number">1.</span> <span class="nav-text">DBLP知识图谱构建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#博客概要"><span class="nav-number">1.1.</span> <span class="nav-text">博客概要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作需求"><span class="nav-number">1.2.</span> <span class="nav-text">工作需求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#以paper为核心的dblp知识图谱"><span class="nav-number">1.2.1.</span> <span class="nav-text">以paper为核心的dblp知识图谱</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#DBLP知识图谱构建"><span class="nav-number">1.</span> <span class="nav-text">DBLP知识图谱构建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#博客概要"><span class="nav-number">1.1.</span> <span class="nav-text">博客概要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工作需求"><span class="nav-number">1.2.</span> <span class="nav-text">工作需求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#以paper为核心的dblp知识图谱"><span class="nav-number">1.2.1.</span> <span class="nav-text">以paper为核心的dblp知识图谱</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Author数据集"><span class="nav-number">1.2.2.</span> <span class="nav-text">Author数据集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Paper数据集"><span class="nav-number">1.2.3.</span> <span class="nav-text">Paper数据集</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
