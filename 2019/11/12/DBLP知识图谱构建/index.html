@@ -93,10 +93,10 @@
 <meta property="og:site_name" content="Ninecl">
 <meta property="og:description" content="文章概要最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧。  工作需求首先说明一下我们的工作是在做什么：我们希望从DBLP网站上获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作。 以发表物为核心的dblp知识图谱我们提取出来的所有数据都是以发表物为核心的，在接下来要描述的三个数据集中我们可以看到，我们所定义的rdf都是以谋个发表">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http:&#x2F;&#x2F;q0vz4hoom.bkt.clouddn.com&#x2F;DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA.png">
-<meta property="og:updated_time" content="2019-11-13T07:53:10.090Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;q0vz4hoom.bkt.clouddn.com&#x2F;blog&#x2F;%E6%9E%84%E5%BB%BADBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA.png">
+<meta property="og:updated_time" content="2019-11-14T01:58:10.073Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;q0vz4hoom.bkt.clouddn.com&#x2F;DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;q0vz4hoom.bkt.clouddn.com&#x2F;blog&#x2F;%E6%9E%84%E5%BB%BADBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA.png">
 
 
 
@@ -337,7 +337,7 @@
       
 
       
-        <h1 id="文章概要"><a href="#文章概要" class="headerlink" title="文章概要"></a>文章概要</h1><p>最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧。<br><img src="http://q0vz4hoom.bkt.clouddn.com/DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA.png" alt="思维导图"></p>
+        <h1 id="文章概要"><a href="#文章概要" class="headerlink" title="文章概要"></a>文章概要</h1><p>最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧。<br><img src="http://q0vz4hoom.bkt.clouddn.com/blog/%E6%9E%84%E5%BB%BADBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA.png" alt="思维导图"></p>
 <hr>
 <h1 id="工作需求"><a href="#工作需求" class="headerlink" title="工作需求"></a>工作需求</h1><p>首先说明一下我们的工作是在<strong>做什么</strong>：<br>我们希望从DBLP网站上获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作。</p>
 <h2 id="以发表物为核心的dblp知识图谱"><a href="#以发表物为核心的dblp知识图谱" class="headerlink" title="以发表物为核心的dblp知识图谱"></a>以发表物为核心的dblp知识图谱</h2><p>我们提取出来的所有数据都是以发表物为核心的，在接下来要描述的三个数据集中我们可以看到，我们所定义的rdf都是以谋个发表物的key为头实体，然后连接各种各样的其他实体或属性，我们强调以发表物为核心的原因是接下来我们在分析dblp.xml文件的时候我们会发现里面有一些record记录的并不是某一篇具体的发表物，也可能是某一个期刊的某一卷或某一本book。</p>
@@ -418,7 +418,7 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- schema-2017-04.rdf --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">https:</span>//<span class="attr">dblp.uni-trier.de</span>/<span class="attr">rdf</span>/<span class="attr">schema-2017-04-18</span>#<span class="attr">publishedInJournal</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- public schema --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">http:</span>//<span class="attr">purl.org</span>/<span class="attr">dc</span>/<span class="attr">terms</span>/<span class="attr">modified</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="属性转化规则"><a href="#属性转化规则" class="headerlink" title="属性转化规则"></a>属性转化规则</h3><p>属性目前我们需要的有title，mdate，发表位置(journal, booktitle, series)，year这四个，我们采用直接使用字符串作为尾实体的方式，因此不需要做转化，有一点点需要处理的地方是需要在字符串前后手动加上 <strong>“”</strong>。如果以后需要做属性的url转化再继续补充。</p>
-<h2 id="xml转化时读取Entity的问题"><a href="#xml转化时读取Entity的问题" class="headerlink" title="xml转化时读取Entity的问题"></a>xml转化时读取Entity的问题</h2><p>这一步真的是，天坑，神坑，巨坑无比，我们以一个印度大哥的名字José de Jesús Luis González Ibánez为例子，他的名字在xml中的是Jos&eacute; de Jes&uacute;s Luis Gonz&aacute;lez Ib&aacute;nez，然后我们用python读取xml的时候发现，我们接下来介绍的两个包，sax和dom，首先sax是直接不解析外部dtd定义的实体，你想读？可以，先在xml文件内部重新定义一遍。就算你定义了之后，读取之后会自动把例如这个 <em>&aacute;</em> 转化为 <em>é</em>。这就尴尬了啊，我不要转化啊，因为dblp中的那么解析成为url需要把 <em>&aacute;</em> 转化为 <em>=aacute=</em>，你这直接帮我转化成了印度字母我可怎么顶啊？？？<br>于是最后我采用了最暴力的方式，在xml转rdf之前，把所有xml里的&xxx;实体全部正则表达式匹配出来，替换成=xxx=，之后如果需要再换回来(微笑)。</p>
+<h2 id="xml转化时读取Entity的问题"><a href="#xml转化时读取Entity的问题" class="headerlink" title="xml转化时读取Entity的问题"></a>xml转化时读取Entity的问题</h2><p>这一步真的是，天坑，神坑，巨坑无比，我们以一个印度大哥的名字José de Jesús Luis González Ibánez为例子，他的名字在xml中的是Jos&eacute; de Jes&uacute;s Luis Gonz&aacute;lez Ib&aacute;nez，然后我们用python读取xml的时候发现，我们接下来介绍的两个包，sax和dom，首先第一个坑是sax是直接不解析外部dtd定义的实体，你想读？可以，先在xml文件内部重新定义一遍这些实体，然后就迎来了第二个坑，就算你定义了之后，不管是sax还是dom读取xml的时候都会自动把例如实体 <em>&amp;eacute；</em> 转化为 <em>é</em>。这就尴尬了啊，我不要转化啊，因为dblp中要把name解析成为url需要把 <em>&amp;eacute；</em> 转化为 <em>=eacute=</em>，你这直接帮我转化成了印度字母我可怎么顶啊？？？<br>于是最后我采用了最暴力的方式，在xml转rdf之前，把所有xml里的&xxx;实体全部正则表达式匹配出来，替换成=xxx=，之后如果需要再换回来(微笑)。</p>
 <h2 id="python解析xml"><a href="#python解析xml" class="headerlink" title="python解析xml"></a>python解析xml</h2><p>python解析xml在网上看到了SAX，DOM，ElementTree，还有师兄用的bf4这里简单介绍一下。</p>
 <h3 id="SAX"><a href="#SAX" class="headerlink" title="SAX"></a>SAX</h3><p>sax解析调用的是xml.sax的包，菜鸟教程上的定义是：</p>
 <blockquote>
