@@ -93,10 +93,10 @@
 <meta property="og:site_name" content="Ninecl">
 <meta property="og:description" content="文章概要最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧。  工作需求首先说明一下我们的工作是在做什么：我们希望从DBLP网站上获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作。 以Author为核心的dblp知识图谱首先我们要明确的是我们要构建的知识图谱是以Author为核心的，在接下来要描述的三个数据集中我们可以看到，我们所">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http:&#x2F;&#x2F;q0vz4hoom.bkt.clouddn.com&#x2F;blog&#x2F;DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BADBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA_%E6%96%87%E7%AB%A0%E6%A6%82%E8%A6%81.png">
-<meta property="og:updated_time" content="2019-11-16T01:38:17.432Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;q0vz4hoom.bkt.clouddn.com&#x2F;blog&#x2F;DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BADBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-final.png">
+<meta property="og:updated_time" content="2019-11-19T08:17:38.693Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;q0vz4hoom.bkt.clouddn.com&#x2F;blog&#x2F;DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BADBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA_%E6%96%87%E7%AB%A0%E6%A6%82%E8%A6%81.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;q0vz4hoom.bkt.clouddn.com&#x2F;blog&#x2F;DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BADBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-final.png">
 
 
 
@@ -337,7 +337,7 @@
       
 
       
-        <h1 id="文章概要"><a href="#文章概要" class="headerlink" title="文章概要"></a>文章概要</h1><p>最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧。<br><img src="http://q0vz4hoom.bkt.clouddn.com/blog/DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BADBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA_%E6%96%87%E7%AB%A0%E6%A6%82%E8%A6%81.png" alt="思维导图"></p>
+        <h1 id="文章概要"><a href="#文章概要" class="headerlink" title="文章概要"></a>文章概要</h1><p>最近喜欢用思维导图列一下提纲，感觉这样思路会更清晰，也更方便记忆，所以先放一张思维导图上来吧。<br><img src="http://q0vz4hoom.bkt.clouddn.com/blog/DBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BADBLP%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%E6%9E%84%E5%BB%BA-final.png" alt="思维导图"></p>
 <hr>
 <h1 id="工作需求"><a href="#工作需求" class="headerlink" title="工作需求"></a>工作需求</h1><p>首先说明一下我们的工作是在<strong>做什么</strong>：<br>我们希望从DBLP网站上获取计算机领域论文的一系列信息，以此构建一张知识图谱，然后进行进一步的工作。</p>
 <h2 id="以Author为核心的dblp知识图谱"><a href="#以Author为核心的dblp知识图谱" class="headerlink" title="以Author为核心的dblp知识图谱"></a>以Author为核心的dblp知识图谱</h2><p>首先我们要明确的是我们要构建的知识图谱是以Author为核心的，在接下来要描述的三个数据集中我们可以看到，我们所定义的rdf都是某个有作者的具体的发表物，然后连接各种各样的其他实体或属性，我们强调以Author为核心的原因是在分析dblp.xml文件的时候我们会发现里面有一些record记录的并不是某人的具体谋篇发表物，也可能是某一个期刊的某一卷或某一本book等等。接下来讲一下我们需要构建的三个数据集格式。</p>
